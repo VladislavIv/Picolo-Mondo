@@ -57,11 +57,7 @@ text-decoration: none;
   opacity: .75;
 }
 .header_logo{
-  /*position: absolute;
-  left: 45.83%;
-  right: 45.83%;
-  top: 3.1%;
-  bottom: 3.88%;*/
+
 }
 .header_right{
   display: flex;
@@ -70,10 +66,16 @@ text-decoration: none;
   vertical-align: bottom;
 }
 .header_right_number{
-  display: flex;
+ display: flex;
  width: 100%; 
  justify-content: space-between;
+ text-decoration: none;
+ color: black;
 }
+/* .header_right_number:hover{
+  text-decoration: underline;
+    color: red; 
+} */
 .header_work_time{
 display: flex;
 flex-direction: column;
@@ -189,6 +191,12 @@ height: 30px;
 background: url('../images/svg/arrowleft.svg') 0 0 / 100%  no-repeat;
 border: none;
 }
+.slide_container .slick-arrow.slick-prev:focus{
+  visibility: hidden;
+}
+.slide_container .slick-arrow.slick-next:focus{
+  visibility: hidden;
+}
 .slide_container .slick-dots{
   display: flex;
   align-items: center;
@@ -236,6 +244,9 @@ padding: 11px 34px;
   left: 361px;
   color:white;
   text-align: center;*/
+width: 322px;
+height: 44px;
+
    background-color: #C08A4A;
 }
 .slick-slider{}
@@ -280,9 +291,11 @@ padding: 11px 34px;
 
 /*main styles start*/
 .main{
+position: relative;
+background: url(../images/background_main.jpg);
 
 }
-.content{
+.content{+6........................................................6666666666666666666666666666666666666+66666666666666666666666666666666666666666666666666666666+++++++++++++++++++++66666666666
 
 }
 .content_title{
