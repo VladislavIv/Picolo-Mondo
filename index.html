@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/content-grid.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
@@ -103,93 +104,59 @@
             </div>
         </div>
     </div>
-    <!-- <div class="slide_container">
-        <div class="slide_1">
-            <div class="slide_text_area">
-                <h1>Picolo Mondo</h1>
-                <p>"Die kleine italienische Genusswelt.
-                    Traditionell. Authentisch. Lecker."
-                    Da wir ein kleines Lokal sind, empfehlen wir unseren Gästen die Vorbestellung eines Tisches.
-                    Kontaktieren Sie und gern für Ihre Reservierung</p>
-                <button class="slide_button">Reservieren sie einen tisch</button>
-            </div>
-        </div>
-        <div class="slide_2">
-            <div class="slide_text_area">
-                <h1>Picolo Mondo</h1>
-                <p>Antipasti, Pizza, Pasta und süße Sachen aus Bella Italia!
-                    Im Magdeburger Traditionshaus PICCOLO MONDO reisen Sie für einen Abend nach Italien.
-                    Erleben und genießen Sie authentisch italienische Gerichte, die aus verschiedenen regionalen Küchen
-                    Italiens stammen.
-                    Gönnen Sie Ihren Sinnen einen mediterranen Kurzurlaub und Ihrem Gaumen unzählige Genussmomente – die
-                    italienische Küche ist voll davon!
-                    Unkompliziert, raffiniert und frisch.</p>
-                <button class="slide_button">Reservieren sie einen tisch</button>
-            </div>
-        </div>
-        <div class="slide_3">
-            <div class="slide_text_area">
-                <h1>Picolo Mondo</h1>
-                <p>Im PICCOLO MONDO erwarten Sie die Klassiker aus den Kochtöpfen Italiens.
-                    Beste Grundzutaten und echte Spezialitäten werden zu herzhaften, saftigen, würzigen oder süßen
-                    Speisen.
-                    Dazu reichen wie unseren Gästen beste Weine und italienische Spirituosen.
-                    Das ist authentische Cucina Italiana in Magdeburg.</p>
-                <button class="slide_button">Reservieren sie einen tisch</button>
-            </div>
-        </div>
-        <div class="slider_arrow">
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-        </div>
-    </div><br>
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div> -->
-
     <main class="main">
-        <div class="content">
+        <div class="container">
             <h2 class="content_title">Ambiente</h2>
-            <div class="content_1">
-                <div class="content_img_1"><img src="images/IMG-20200822-WA0049.jpg" width="500" height="300" alt="">
+            <div class='row'>
+                <div class="col-md-6">
+                    <img src="images/IMG-20200822-WA0049.jpg" width="500" height="300" alt="">
                 </div>
-                <div class="content_text">
-                    <h4>Hedline</h4>
-                    <p>Das Ristorante Piccolo Mondo ist ein etwas verstecktes italienisches Restaurant mit rustikalem
-                        Ambiente im Herzen Magdeburgs.
-                        Es bietet Platz für 65 Personen und hat einen schönen Außenbereich.</p>
+                <div class='col-md-6'>
+                    <div style="color:#fff;width: 75%;margin:0 auto">
+                        <h4>Hedline</h4>
+                        <p>Das Ristorante Piccolo Mondo ist ein etwas verstecktes italienisches Restaurant mit
+                            rustikalem
+                            Ambiente im Herzen Magdeburgs.
+                            Es bietet Platz für 65 Personen und hat einen schönen Außenbereich.</p>
+                    </div>
+                </div>
+                <div class='col-md-6'>
+                    <div style="color:#fff;width: 75%;margin:0 auto">
+                        <h4>Hedline</h4>
+                        <p>Wir bieten Ihnen die traditionelle Küche Italiens in ihrer ganzen Vielfalt: von hausgemachter
+                            Antipasti und Pasta über Fisch- und Fleischgerichte bis hin zu leckeren Desserts.
+                            Passend zum Gericht empfiehlt Ihnen der Chef gern einen Wein aus unserer großen Auswahl von
+                            landestypischen Weinen, die selbst dem verwöhnten Gaumen noch einige Überraschungen bieten.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6" style="text-align: center;">
+                    <img src="images/IMG-20200822-WA0045.jpg" width="500" height="300" alt="">
                 </div>
             </div>
-            <div class="content_1">
-                <div class="content_img_2"><img src="images/IMG-20200822-WA0045.jpg" width="500" height="300" alt="">
+            <div class='row'>
+                <div class="col-md-6" style="text-align: center;">
+                    <img src='images/IMG-20200822-WA0036.jpg' width="500" height="300" alt="">
                 </div>
-                <div class="content_text_1">
-                    <h4>Hedline</h4>
-                    <p>Wir bieten Ihnen die traditionelle Küche Italiens in ihrer ganzen Vielfalt: von hausgemachter
-                        Antipasti und Pasta über Fisch- und Fleischgerichte bis hin zu leckeren Desserts.
-                        Passend zum Gericht empfiehlt Ihnen der Chef gern einen Wein aus unserer großen Auswahl von
-                        landestypischen Weinen, die selbst dem verwöhnten Gaumen noch einige Überraschungen bieten.</p>
-                </div>
-            </div>
-            <div class="content_1">
-                <div class="content_img_3"><img src="images/IMG-20200822-WA0036.jpg" width="500" height="300" alt="">
-                </div>
-                <div class="content_text">
-                    <h4>Hedline</h4>
-                    <p>Hochzeit, Geburtstag, Taufe oder Betriebsfeier... das Ristorante Piccolo Mondo ist der ideale
-                        Rahmen für festliche Anlässe.
-                        Auf Wunsch erhalten Sie einen passenden Menüvorschlag für Ihre Feier.
-                        Sagen Sie uns, was Sie gerne anbieten möchten - wir machen Ihnen Vorschläge für ein echt
-                        italienisches Menü.</p>
+                <div class='col-md-6'>
+                    <div style="color:#fff;width: 75%;margin:0 auto">
+                        <h4>Hedline</h4>
+                        <p>Hochzeit, Geburtstag, Taufe oder Betriebsfeier... das Ristorante Piccolo Mondo ist der ideale
+                            Rahmen für festliche Anlässe.
+                            Auf Wunsch erhalten Sie einen passenden Menüvorschlag für Ihre Feier.
+                            Sagen Sie uns, was Sie gerne anbieten möchten - wir machen Ihnen Vorschläge für ein echt
+                            italienisches Menü.</p>
+                    </div>
                 </div>
             </div>
         </div>
         <div>
             <h2 class="content_title">A LA CARTE</h2>
             <article>
-                <p>Liebe Freunde der italienischen Küche, ich freue mich, Euch in meinem Ristorante "Piccolo Mondo"
+                <p class="content_text_carte">Liebe Freunde der italienischen Küche, ich freue mich, Euch in meinem
+                    Ristorante
+                    "Piccolo Mondo"
                     begrüßen zu dürfen. Für meine Mitarbeiter und mich ist es wirklich eine kleine Welt, ein kleines
                     Stück Italien, in dem wir Euch original italienische Speisen und darüber hinaus auch die
                     italienische Lebensart näherbringen möchten.
@@ -198,7 +165,7 @@
                     Spezialitäten aus den Regionen Italiens.
 
                     Wer spezielle Wünsche zur Zubereitung oder zu den Zutaten seines Essens hat oder die auf einer
-                    Urlaubsreise entdeckte Spezialität gern einmal in Magdeburg serviert bekommt möchte, findet bei uns
+                    Urlaubsreise en0tdeckte Spezialität gern einmal in Magdeburg serviert bekommt möchte, findet bei uns
                     stets ein offenes Ohr.Auch sonst sind wir für Eure Hinweise und Anregungen dankbar.
 
                     Buon Appetito!
@@ -206,7 +173,30 @@
             </article>
         </div>
         <div>
-            <h2 class="content_title">Galerie</h2>
+            <div class="content_pdf">
+                <div class="content_pdf_get">
+                    <a title="Getranke" href="Piccolo Mondo_Speisekarte.pdf"><img src="images/Getranke.jpg"
+                            alt="Getranke" width="600px" height="300px"></a>
+                    <h3>Getranke</h3>
+                </div>
+            </div>
+            <div>
+                <div class="content_pdf_essen">
+                    <a title="Essen" href="Piccolo Mondo_Weinkarte.pdf"><img src="images/Essen.jpg" alt="Essen"
+                            width="600px" height="300px"></a>
+                    <h3>Essen</h3>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div class="content_galerie">
+            <div>
+                <h2 class="content_title">Galerie</h2>
+            </div>
+            <div class="content_galerie_slider">
+
+            </div>
         </div>
     </main>
 
