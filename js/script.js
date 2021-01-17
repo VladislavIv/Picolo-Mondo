@@ -22,36 +22,25 @@ $(document).ready(function () {
         autoplaySpeed: 15000,
         waitForAnimate: false,
     });
-    // $('.content_galerie_slider').slick({
-    //     slidesToShow: 3,
-    //     slidesToScroll: 3,
-    //     arrows: false,
-    //     fade: true,
-    //     asNavFor: ".content_galerie_slider_big",
-    //     centerMode: true,
-    //     focusOnSelect: false
-    // });
-
     $('.content_galerie_slider')
-    .on('init', function(event, slick) {
-        $('.content_galerie_slider .slick-slide.slick-current').addClass('is-active');
-    })
-    .slick({
-        slidesToShow: 7,
-        slidesToScroll: 7,
-        dots: false,
-        focusOnSelect: false,
-        infinite: false,       
-    });
-
-    $('.content_galerie_slider_big').on('afterChange', function(event, slick, currentSlide) {
+        .on('init', function (event, slick) {
+            $('.content_galerie_slider .slick-slide.slick-current').addClass('is-active');
+        })
+        .slick({
+            slidesToShow: 7,
+            slidesToScroll: 7,
+            dots: false,
+            focusOnSelect: false,
+            infinite: false,
+        });
+    $('.content_galerie_slider_big').on('afterChange', function (event, slick, currentSlide) {
         $('.content_galerie_slider').slick('slickGoTo', currentSlide);
         var currrentNavSlideElem = '.content_galerie_slider .slick-slide[data-slick-index="' + currentSlide + '"]';
         $('.content_galerie_slider .slick-slide.is-active').removeClass('is-active');
         $(currrentNavSlideElem).addClass('is-active');
     });
 
-    $('.content_galerie_slider').on('click', '.slick-slide', function(event) {
+    $('.content_galerie_slider').on('click', '.slick-slide', function (event) {
         event.preventDefault();
         var goToSingleSlide = $(this).data('slick-index');
 
@@ -59,3 +48,10 @@ $(document).ready(function () {
     });
 });
 
+function myMap() {
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {
+      center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+    };
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+  }

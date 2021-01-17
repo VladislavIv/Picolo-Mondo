@@ -18,54 +18,50 @@
 
 <body>
     <header class="header">
-        <div class="container wrapper">
-            <div class="row header_wrapper">
-                <div class="col-md-5">
-                    <nav class="header_nav">
-                        <ul class="header_list">
-                            <li class="header_item">
-                                <a href="#" class="header_link">Ambiente</a>
-                            </li>
-                            <li class="header_item">
-                                <a href="#" class="header_link">A LA Carte</a>
-                            </li>
-                            <li class="header_item">
-                                <a href="#" class="header_link">Galerie</a>
-                            </li>
-                            <li class="header_item">
-                                <a href="#" class="header_link">Ort</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-md-2 header_logo">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <nav class="header_nav">
+                    <ul class="header_list">
+                        <li class="header_item">
+                            <a href="#" class="header_link">Ambiente</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#" class="header_link">A LA Carte</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#" class="header_link">Galerie</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#" class="header_link">Ort</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_logo">
                     <a class="header_logo_link">
                         <img src="images/iojmulö 1.png" alt="Piccolo-Mondo">
                     </a>
                 </div>
-                <div class="col-md header_right">
+                <div class="header_right">
                     <div class="header_right_number">
                         <a href="tel:+039155576720">Call Us</a>
                     </div>
                 </div>
-                <ul class="col-md-2 header_work_time">
+                <ul class="header_work_time">
                     <li>11:30-14:30 Uhr</li>
                     <li>17:30-22:30 Uhr</li>
                 </ul>
-                <div class="col-md header_social_link">
+                <div class="header_social_link">
                     <a href="https://www.facebook.com/pages/Piccolo-Mondo/131151193600271"><img
                             src="images/svg/facebook.svg" /></a>
                     <a href="https://instagram.com/piccolomondo.md?igshid=172tixx2ha10">
                         <img src="images/svg/inst.svg" /></a>
                 </div>
-                <div class="col-md">
-                    <ul class="translate_add">
-                        <li class="header_lang_de"><button id="de" class="translate"><img src="images/germany.png"
-                                    alt="gerflag" width="30px" height="20px"></button></li>
-                        <li class="header_lang_en"><button id="en" class="translate"><img src="images/england.png"
-                                    alt="ukflag" width="30px" height="20px"></button></li>
-                    </ul>
-                </div>
+                <ul class="translate_add">
+                    <li class="header_lang_de"><button id="de" class="translate"><img src="images/germany.png"
+                                alt="gerflag" width="30px" height="20px"></button></li>
+                    <li class="header_lang_en"><button id="en" class="translate"><img src="images/england.png"
+                                alt="ukflag" width="30px" height="20px"></button></li>
+                </ul>
             </div>
         </div>
     </header>
@@ -186,13 +182,13 @@
                     <div class="content_pdf_get">
                         <a title="Getranke" href="Piccolo Mondo_Speisekarte.pdf"><img src="images/Getranke.jpg"
                                 alt="Getranke"></a>
-                        <h3>Getranke</h3>
+                        <h3>Essen</h3>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="content_pdf_essen">
                         <a title="Essen" href="Piccolo Mondo_Weinkarte.pdf"><img src="images/Essen.jpg" alt="Essen"></a>
-                        <h3>Essen</h3>
+                        <h3>Getranke</h3>
                     </div>
                 </div>
             </div>
@@ -243,12 +239,19 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <h2 class="content_title">Ort</h2>
+            </div>
+            <div id="map" style="width:100%;height:400px;"></div>
+            <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR8P72HMX3zllKeeZt8X89dJWMEu0LSX8&callback=myMap"
+                async defer></script>
         </div>
     </main>
 
 </body>
-<footer>
-    <div class='container'>
+<footer class="last_info">
+    <div class="container last_inform">
         <div class='row'>
             <div class="col-md-2">
                 <p>
